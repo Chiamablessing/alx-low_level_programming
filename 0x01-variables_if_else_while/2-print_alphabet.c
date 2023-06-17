@@ -2,14 +2,13 @@
 #include <stdlib.h>
 
 /**
- * main - A program that prints alphabet with function
+ * main - Print alphabet
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
 	char ab;
-	char ac;
 
 	for (ab = 'a'; ab <= 'z'; ab++)
 	{
