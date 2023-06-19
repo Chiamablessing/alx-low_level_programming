@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<unixstd.h>
 /**
  *main - entry path for c programs that use exactly
  *Return: returns 1 if successful
