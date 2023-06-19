@@ -16,9 +16,9 @@ int main(void)
 		{
 			if (b > a)
 			{
-				putchar('0' + a);
-				putchar('0' + b);
-				if (a != 8 || b != 9)
+				putchar(a + '0');
+				putchar(b + '0');
+				if (a != 9 || b != 10)
 				{
 				}
 				else
