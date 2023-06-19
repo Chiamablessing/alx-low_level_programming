@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - print combination of two digits
- *Return: always 0 (Success)
+ *main - a program that prints all possible combination of different digits
+ *Return: always 0
  */
 
 int main(void)
@@ -14,11 +14,11 @@ int main(void)
 	{
 		for (b = 1; b <= 9; b++)
 		{
-			if (b > a)
+			if (a < b)
 			{
 				putchar(a + '0');
 				putchar(b + '0');
-				if (a != 9 || b != 10)
+				if (a == 8 && x == b)
 				{
 				}
 				else
