@@ -2,8 +2,7 @@
 #include <string.h>
 /**
  *puts_half -prints half
- *@str: pointer parameter variable of typ
- e int
+ *@str: pointer parameter variable of type int
  */
 void puts_half(char *str)
 {
