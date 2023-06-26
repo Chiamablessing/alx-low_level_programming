@@ -5,7 +5,7 @@
  * @dest: pointer variable of type char
  * @src: pointer variable of type char
  * Return: retuns the variable dest
- * 
+ *
  */
 
 char *_strcpy(char *dest, char *src)
