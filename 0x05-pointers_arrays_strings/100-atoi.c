@@ -8,12 +8,12 @@
 
 int _atoi(char *s)
 {
-	int j, num, end = (strlen(s));
+	int num = 0;
 
-	for (j = 0; j < end; j++)
+	while (*s != '\0')
 	{
-		if (s[j] != '+' || s[j] != '-')
-			num = (int)(s[j]);
+		num = num * 10 + (*s - '0');
+		s++;
 	}
 	return (num);
 }
