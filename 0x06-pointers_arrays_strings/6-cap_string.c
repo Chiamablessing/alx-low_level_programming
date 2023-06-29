@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - capitalize the first character of string with separations of words
+ * cap_string - capitalize the first character of string
  * @str: pointer variable parameter of type char
  * Return: returns string with capitalize first character
  */
