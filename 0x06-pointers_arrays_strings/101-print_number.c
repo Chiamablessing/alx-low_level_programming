@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  prnnt_number - prints out int.
+ *  print_number - prints out int.
  *  @n: variable type of int to be printed.
  *
  *  Description: This function prints out an integer to the standard output
