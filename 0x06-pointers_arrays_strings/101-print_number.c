@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *  prnnt_numbers - prints out ints
- *  @n: varnable type of int
+ *  prnnt_number - prints out an integer.
+ *  @n: The integer to be printed.
+ *  description: function print out an integer to a standard output
  */
 void print_number(int n)
 {
