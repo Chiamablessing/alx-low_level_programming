@@ -8,12 +8,17 @@
 
 int _atoi(char *s)
 {
-	int j, num, end = (strlen(s));
+	int j, num,int len = (strlen(s)), char res [9];
 
-	for (j = 0; j < end; j++)
+	for (j = 0; j < len; j++)
 	{
-		if (s[j] != '+' || s[j] != '-')
-			num = (int)(s[j]);
+		flag = 1
+		if (flag == 1 && str[j] < '0' && str[j] > '9')
+			printf ("%d", str[j]);
+		if (str[j - 1]== '-' )
+			printf("%d", str[j - 1]);
+			
+		printf("/n");
 	}
 	return (num);
 }
