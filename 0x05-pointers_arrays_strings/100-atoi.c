@@ -8,6 +8,7 @@
 
 int _atoi(char *s)
 {
+<<<<<<< HEAD
 	int j, num,int len = (strlen(s)), char res [9];
 
 	for (j = 0; j < len; j++)
@@ -19,6 +20,14 @@ int _atoi(char *s)
 			printf("%d", str[j - 1]);
 			
 		printf("/n");
+=======
+	int num = 0;
+
+	while (*s != '\0')
+	{
+		num = num * 10 + (*s - '0');
+		s++;
+>>>>>>> f6d7ea21c97fd737b7e951d2ae8fabcd92e7d63a
 	}
 	return (num);
 }

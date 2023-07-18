@@ -9,6 +9,7 @@
  */
 int main(void)
 {
+<<<<<<< HEAD
     float a;
     float r;
 
@@ -16,4 +17,13 @@ int main(void)
     a = PI * r * r;
     printf("%.3f\n", a);
     return (0);
+=======
+	float a;
+	float r;
+
+	r = 98;
+	a = PI * r * r;
+	printf("%.3f\n", a);
+	return (0);
+>>>>>>> f6d7ea21c97fd737b7e951d2ae8fabcd92e7d63a
 }
