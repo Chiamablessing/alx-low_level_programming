@@ -3,7 +3,7 @@
  * op_add - adds 2 integers
  * @a: first integer
  * @b: second integer
- * Return: returns calculated value of the integers
+ * Return: returns calculated value
  */
 
 int op_add(int a, int b)
