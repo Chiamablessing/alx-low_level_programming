@@ -27,11 +27,10 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	arr = (unsigned char *)main;
-
+	arr = (char *)main;
 	for (i = 0; i < bytes; i++)
 	{
-		printf("%02x ", arr[i] & 0xff);
+		printf("%02x", arr[i] & 0xFF);
 		if (i != bytes - 1)
 		{
 			printf(" ");
@@ -39,6 +38,7 @@ int main(int argc, char *argv[])
 	}
 	printf("\n");
 	return (0);
+
 }
 
 
