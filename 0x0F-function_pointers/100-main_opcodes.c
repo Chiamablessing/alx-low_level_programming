@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < bytes; i++)
 	{
-		printf("%02hhx ", arr[i]);
+		printf("%02x ", arr[i] & 0xff);
 		if (i != bytes - 1)
 		{
 			printf(" ");
