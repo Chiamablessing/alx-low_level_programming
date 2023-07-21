@@ -1,0 +1,1 @@
+This is my ALX C project on variadic function. variadic function is a function in programming languages that can accept a variable number of arguments. The variadic function consists of at least one fixed variable and then an ellipsis(…) as the last parameter. ###Syntax: int function_name(data_type variable_name, ...);
