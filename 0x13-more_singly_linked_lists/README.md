@@ -1,0 +1,2 @@
+ 0x13.C - More singly linked lists
+A singly linked list is a data structure used to organize and store a collection of elements called nodes. Each node in a singly linked list contains two components: the data (also known as the payload) and a reference (or a pointer) to the next node in the sequence. The first node in the list is called the head, and it doesn't have a previous node to point to. The last node in the list has its reference set to null, indicating the end of the list.
