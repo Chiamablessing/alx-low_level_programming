@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_string - changes the vavlue of a schar type
+ * set_string - changes the value of a char type
  * @s: double pointer parameter variable of type char
  * @to: pointer parameter variable of type char
  *

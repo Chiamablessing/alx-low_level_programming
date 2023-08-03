@@ -8,25 +8,24 @@
 char **strtow(char *str)
 {
 	char **arr;
-	int i, j = 1, len = strlen(str);
+	int i, j = 0, len = strlen(str);
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (i = 0; i < len; i++)
 	{
-		/**
-		 * if (str[i] == " ")
-		 * 	continue;
-		 * *else*
-		 */
-		j++;
+		if (str[i] == ' ')
+			j++;
 	}
-	arr = malloc(sizeof(char) * j);
+	j++;
+
+	arr = malloc((j + 1) * sizeof(char*));
 	if (arr == NULL)
 		return (NULL);
 
 	/**
 	 * arr = strtok(str, " ");
 	 */
+
 	return (arr);
 }
