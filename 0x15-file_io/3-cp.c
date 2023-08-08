@@ -15,10 +15,17 @@ void close_file(int fd)
 	}
 }
 
+/**
+ *  copy_from_to - read the content of a file and write to another file
+ * @file_from: name of file which conteny is read to
+ * @file_to: name of file to write content to
+ * 
+ * Return:
+ */
 void copy_from_to(const char *file_from, const char *file_to)
 {
 	int fd1, fd2;
-	ssize_t bytes_read;
+	ssize_t file_read;
 	char buf[BUFFER_SIZE];
 
 	fd1 = open(file_from, O_RDONLY);
@@ -34,9 +41,9 @@ void copy_from_to(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-	while ((bytes_read = read(fd1, buf, BUFFER_SIZE)) > 0)
+	while ((file_read = read(fd1, buf, BUFFER_SIZE)) > 0)
 	{
-		if (write(fd2, buf, bytes_read) < 0)
+		if (write(fd2, buf, file_read) < 0)
 		{
 			dprintf(STDERR_FILENO,
 					"Error: Can't write to %s\n", file_to);
@@ -44,7 +51,7 @@ void copy_from_to(const char *file_from, const char *file_to)
 			exit(99);
 		}
 	}
-	if (bytes_read < 0)
+	if (file_read < 0)
 	{
 		dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", file_from);
@@ -58,7 +65,7 @@ void copy_from_to(const char *file_from, const char *file_to)
  *  main - program that copies the content of a file to another file
  *  @argc: number of args
  *  @argv: pointer to pointers of string
- * 
+ *
  *  Return: always 0 on success
  */
 int main(int argc, char **argv)
