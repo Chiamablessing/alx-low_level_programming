@@ -19,7 +19,7 @@ void close_file(int fd)
  *  copy_from_to - read the content of a file and write to another file
  * @file_from: name of file which conteny is read to
  * @file_to: name of file to write content to
- * 
+ *
  * Return:
  */
 void copy_from_to(const char *file_from, const char *file_to)
